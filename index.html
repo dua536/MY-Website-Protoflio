@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dua Memon — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+<div class="bg-blob"></div>
+<div class="bg-grid"></div>
+<canvas id="bg-canvas" style="position:fixed;inset:0;width:100%;height:100vh;z-index:0;pointer-events:none;"></canvas>
+
+<nav>
+  <div class="nav-logo">DUA✦</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-hire">Hire Me</a>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-left">
+    <div class="htag"><span class="htag-dot"></span>Software Engineering · NED University · Karachi</div>
+    <div class="hhi">Hello, I'm</div>
+    <h1 class="hname">
+      <span class="n1">DUA</span>
+      <span class="n2">MEMON</span>
+    </h1>
+    <div class="hrole" id="typeRole"></div>
+    <p class="hdesc">Building real-world solutions with Python, JavaScript, Node.js & UiPath RPA. A passionate full-stack developer seeking to contribute to a high-performing engineering team.</p>
+    <div class="hbtns">
+      <a href="#projects" class="btn-g">View My Work</a>
+      <a href="#contact" class="btn-o">Let's Connect</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="cring cr1"></div>
+    <div class="cring cr2"></div>
+    <div class="cring cr3"></div>
+    <canvas id="char-canvas"></canvas>
+    <div class="fchip" style="top:55px;left:-25px;animation-delay:0s">🐍 Python 90%</div>
+    <div class="fchip" style="bottom:110px;left:-35px;animation-delay:1.2s">⚙️ Node.js</div>
+    <div class="fchip" style="bottom:65px;right:-5px;animation-delay:.6s">📊 Pandas</div>
+    <div class="fchip" style="top:190px;right:-25px;animation-delay:1.8s">🤖 UiPath RPA</div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="sec-label">Who I Am</div>
+  <h2 class="sec-title">About <em>Me</em></h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm <b>Dua Memon</b>, a 3rd-year Software Engineering student at <b>NED University of Engineering & Technology</b>, Karachi — one of Pakistan's top engineering institutions.</p>
+      <p>I love building things that matter. From full-stack web apps to data visualisations and automation pipelines, I bring <b>creativity, precision, and hustle</b> to every project I touch.</p>
+      <p>Passionate about building meaningful digital experiences, continuously learning, and contributing to impactful projects with creative engineering teams.</p>
+      <div class="about-stats">
+        <div class="astat"><div class="astat-n">10+</div><div class="astat-l">Technologies</div></div>
+        <div class="astat"><div class="astat-n">2</div><div class="astat-l">Projects</div></div>
+        <div class="astat"><div class="astat-n">3rd</div><div class="astat-l">Year BE</div></div>
+      </div>
+    </div>
+    <div class="id-card-wrap" id="idWrap">
+      <div class="id-card" id="idCard">
+        <div class="avatar-circle">👩‍💻</div>
+        <div class="icard-name">Dua Memon</div>
+        <div class="icard-role">Full-Stack Developer </div>
+        <div class="icard-div"></div>
+        <div class="icard-row"><span>📍 Location</span><span>Karachi, Pakistan</span></div>
+        <div class="icard-row"><span>🎓 University</span><span>NED University</span></div>
+        <div class="icard-row"><span>📚 Degree</span><span>BE Software Engineering</span></div>
+        <div class="icard-row"><span>✉️ Email</span><span>hafsamemon920@gmail.com</span></div>
+        <div class="icard-row"><span>📱 Phone</span><span>03180340800</span></div>
+        <div class="icard-row"><span>✅ Status</span><span style="color:var(--te)">Open to Work</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="sec-label">Technical Expertise</div>
+  <h2 class="sec-title">Skills & <em>Proficiency</em></h2>
+  <div class="skills-grid">
+    <div class="sk-card" style="--p:90%"><div class="sk-icon">🐍</div><div class="sk-head"><div class="sk-name">Python</div><div class="sk-pct">90%</div></div><div class="sk-bar-bg"><div class="sk-bar"></div></div></div>
+    <div class="sk-card" style="--p:82%"><div class="sk-icon">⚡</div><div class="sk-head"><div class="sk-name">JavaScript</div><div class="sk-pct">82%</div></div><div class="sk-bar-bg"><div class="sk-bar"></div></div></div>
+    <div class="sk-card" style="--p:78%"><div class="sk-icon">🌿</div><div class="sk-head"><div class="sk-name">Node.js / Express.js</div><div class="sk-pct">78%</div></div><div class="sk-bar-bg"><div class="sk-bar"></div></div></div>
+    <div class="sk-card" style="--p:75%"><div class="sk-icon">🗄️</div><div class="sk-head"><div class="sk-name">Oracle Database (SQL)</div><div class="sk-pct">75%</div></div><div class="sk-bar-bg"><div class="sk-bar"></div></div></div>
+    <div class="sk-card" style="--p:72%"><div class="sk-icon">🤖</div><div class="sk-head"><div class="sk-name">UiPath — RPA</div><div class="sk-pct">72%</div></div><div class="sk-bar-bg"><div class="sk-bar"></div></div></div>
+    <div class="sk-card" style="--p:74%"><div class="sk-icon">📊</div><div class="sk-head"><div class="sk-name">Matplotlib / Pandas</div><div class="sk-pct">74%</div></div><div class="sk-bar-bg"><div class="sk-bar"></div></div></div>
+    <div class="sk-card" style="--p:70%"><div class="sk-icon">🍃</div><div class="sk-head"><div class="sk-name">MongoDB</div><div class="sk-pct">70%</div></div><div class="sk-bar-bg"><div class="sk-bar"></div></div></div>
+
+  </div>
+</section>
+
+<section class="exp-section" id="experience">
+  <div class="sec-label">Background</div>
+  <h2 class="sec-title">Experience & <em>Education</em></h2>
+  <div class="timeline">
+    <div class="titem">
+      <div class="tdot"></div>
+      <div class="tyr">2024 — Present</div>
+      <div class="trole">BE Software Engineering — 3rd Year</div>
+      <div class="torg">NED University of Engineering & Technology, Karachi</div>
+      <ul class="tpts">
+        <li>Mastered 10+ technologies within 2 years through self-driven learning and academic projects.</li>
+        <li>Multidisciplinary coursework spanning algorithms, databases, software architecture, and systems design.</li>
+      </ul>
+    </div>
+    <div class="titem">
+      <div class="tdot"></div>
+      <div class="tyr">2024 — Now</div>
+      <div class="trole">Software Developer (Coursework & Independent)</div>
+      <div class="torg">NED University — Academic Projects</div>
+      <ul class="tpts">
+        <li>Designed and implemented data-driven applications using Python, JavaScript, and Oracle Database.</li>
+        <li>Collaborated in cross-functional teams to deliver full-stack software solutions under real deadlines.</li>
+        <li>Automated repetitive processes using UiPath RPA, reducing manual task time significantly.</li>
+        <li>Visualised datasets using Matplotlib and Pandas, generating actionable insights from raw data.</li>
+      </ul>
+    </div>
+    <div class="titem">
+      <div class="tdot"></div>
+      <div class="tyr">2024</div>
+      <div class="trole">AI Essentials Certified Learner</div>
+      <div class="torg">Google — Professional Development</div>
+      <ul class="tpts">
+        <li>Completed structured training on ML fundamentals, generative AI tools, and responsible AI practices.</li>
+        <li>Applied prompt engineering techniques to optimise AI outputs for real-world business scenarios.</li>
+        <li>Critically evaluated AI-generated content for accuracy, bias, and ethical alignment.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="sec-label">Work</div>
+  <h2 class="sec-title">Featured <em>Projects</em></h2>
+  <div class="proj-grid">
+    <div class="pcard">
+      <div class="pemoji">🛒</div>
+      <div class="phead">
+        <div class="pname">CartZen</div>
+        <a href="https://dua536.github.io/CARTZEN/" target="_blank" class="plink">Live ↗</a>
+      </div>
+      <p class="pdesc">A full-stack smart grocery management web app with real-time item browsing and cart management. Architected RESTful APIs with Express.js and integrated Oracle Database for persistent structured storage.</p>
+      <div class="tags">
+        <span class="tag">Node.js</span><span class="tag">Express.js</span>
+        <span class="tag">Oracle DB</span><span class="tag">HTML/CSS</span>
+      </div>
+    </div>
+    <div class="pcard">
+      <div class="pemoji">📚</div>
+      <div class="phead">
+        <div class="pname">Student Mgmt System</div>
+        <a href="https://github.com/dua536" target="_blank" class="plink">GitHub ↗</a>
+      </div>
+      <p class="pdesc">Built applying core DSA concepts including linked lists, sorting, and search algorithms. Leveraged Python with Matplotlib and Pandas to manage, analyse, and visualise student records including grades and attendance.</p>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">DSA</span>
+        <span class="tag">Matplotlib</span><span class="tag">Pandas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tools-sec">
+  <div class="sec-label">Toolkit</div>
+  <h2 class="sec-title">Tools I <em>Use</em></h2>
+  <div class="tools-grid">
+    <div class="tpill"><span>Git & GitHub</span></div>
+    <div class="tpill"><span>VS Code</span></div>
+    <div class="tpill"><span>Figma</span></div>
+    <div class="tpill"><span>Postman</span></div>
+    <div class="tpill"><span>SonarQube</span></div>
+    <div class="tpill"><span>SQL</span></div>
+    <div class="tpill"><span>UiPath RPA</span></div>
+    <div class="tpill"><span>Oracle DB</span></div>
+    <div class="tpill"><span>MongoDB</span></div>
+
+    <div class="tpill"><span>Flask</span></div>
+    <div class="tpill"><span>HTML / CSS</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-label">Credentials</div>
+  <h2 class="sec-title">Certifi<em>cations</em></h2>
+  <div class="ccard">
+    <div class="cicon">🏅</div>
+    <div>
+      <div class="cname">Google AI Essentials — Professional Certificate</div>
+      <div class="cissuer">Issued by Google · 2026 · Verified ✓</div>
+    </div>
+  </div>
+</section>
+
+<section class="ach-sec">
+  <div class="sec-label">Wins</div>
+  <h2 class="sec-title">Key <em>Achievements</em></h2>
+  <div class="ach-list">
+    <div class="ach-item"><span class="ach-star">✦</span>Built CartZen — a production-ready full-stack grocery web app using industry-standard technologies independently.</div>
+    <div class="ach-item"><span class="ach-star">✦</span>Developed Student Management System using Python & Flask, demonstrating back-end and database engineering skills.</div>
+    <div class="ach-item"><span class="ach-star">✦</span>Earned Google AI Professional Certificate, showcasing expertise in AI tools and prompt engineering.</div>
+    <div class="ach-item"><span class="ach-star">✦</span>Mastered 10+ technologies within 2 years of study through self-driven learning and academic projects.</div>
+  </div>
+</section>
+
+<section class="contact-sec" id="contact">
+  <div class="sec-label">Get In Touch</div>
+  <div class="contact-grid">
+    <div>
+      <h2 class="ctitle">Let's Build Something <em>Amazing</em> Together ✨</h2>
+      <p class="cdesc">I'm actively seeking internship opportunities to contribute to a high-performing engineering team. Open to collaborations, projects, and conversations!</p>
+    </div>
+    <div class="clinks">
+      <a href="tel:03180340800" class="citem"><span class="cico">📱</span>03180340800</a>
+      <a href="mailto:hafsamemon920@gmail.com" class="citem"><span class="cico">✉️</span>hafsamemon920@gmail.com</a>
+      <a href="https://www.linkedin.com/in/dua-memon-706106219/" target="_blank" class="citem"><span class="cico">💼</span>linkedin.com/in/dua-memon</a>
+      <a href="https://github.com/dua536" target="_blank" class="citem"><span class="cico">🐙</span>github.com/dua536</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="flogo">Dua Memon ✦</span>
+  <span>Karachi, Pakistan · 2024 · Made with 💜</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
